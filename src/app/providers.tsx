@@ -12,6 +12,10 @@ export const theme = extendTheme({
         bg: "black", // Setting background color to black
         color: "white", // Setting text color to white
       },
+      a: {
+        color: "teal.500",
+        textDecoration: "underline",
+      },
     },
   },
 });

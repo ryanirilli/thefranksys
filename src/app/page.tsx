@@ -1,5 +1,7 @@
 import {
   Box,
+  Alert,
+  AlertIcon,
   Heading,
   Text,
   UnorderedList,
@@ -120,8 +122,18 @@ export default function Home() {
             </AccordionButton>
 
             <AccordionPanel pb={4}>
+              <Text mb={4}>
+                We'll get things rolling at the AirBnB Friday morning. For
+                anyone planning on joining early, we'll likely hit a brewery for
+                lunch or possibly{" "}
+                <a href="https://stadiumgolftacoma.com/" target="_blank">
+                  Stadium Golf
+                </a>{" "}
+                during the day. We'll be back at the AirBnB by 5pm for the
+                offical kickoff.
+              </Text>
               <Heading as="h3" size="md">
-                Party Bus
+                Party Bus, 8pm
               </Heading>
               <Text maxWidth="600px" my={4}>
                 <strong>Please bring $10 in cash</strong> to contirbute to the
@@ -138,10 +150,14 @@ export default function Home() {
                     <ListItem>Parkway Tavern</ListItem>
                     <ListItem>Titlow Park</ListItem>
                     <ListItem>Club Silverstone</ListItem>
-                    <ListItem>Last stop - Emrald Queen Casino</ListItem>
+                    <ListItem>Last stop - Emerald Queen Casino</ListItem>
                   </UnorderedList>
                 </ListItem>
               </UnorderedList>
+              <Alert status="info" bg="whiteAlpha.200" my={8} borderRadius={4}>
+                <AlertIcon />
+                Plan on taking rideshare back to the AirBnB from the casino
+              </Alert>
             </AccordionPanel>
           </AccordionItem>
 
@@ -156,8 +172,13 @@ export default function Home() {
             </AccordionButton>
 
             <AccordionPanel pb={4}>
+              <Text mb={4}>
+                It'll be a late start to the day, but we'll have breakfast food,
+                coffee, and mimosas at the AirBnB to help shakeoff any hangover
+                energy. We'll be heading to the basketball court around 1pm.
+              </Text>
               <Heading as="h3" size="md" mb={4}>
-                Basketball Tournament
+                Basketball Tournament, 1pm
               </Heading>
               <UnorderedList>
                 <ListItem>Teams have been selected at random</ListItem>
@@ -178,6 +199,29 @@ export default function Home() {
                   height={2222}
                 />
               </Box>
+              <Heading as="h3" size="md" mt={16} mb={4}>
+                Dinner at Asado, 7pm
+              </Heading>
+              <Text mb={4}>
+                <a href="https://www.asadotacoma.com/" target="_blank">
+                  Asado
+                </a>{" "}
+                in Tacoma is an Argentine-themed steakhouse known for its
+                mesquite grilled steaks, premium cocktails, and stunning
+                seafood. It offers a convivial atmosphere reminiscent of an
+                Argentine grill party, with a social setting featuring a chef's
+                table and bench booth seating. The restaurant's interior
+                combines metalwork and deep-hued wood, creating a rustic urban
+                palette. It has a flavor-forward menu in the vibrant Sixth
+                Avenue dining district location.
+              </Text>
+              <Image
+                src="/asado.jpg"
+                alt="asado"
+                layout="responsive"
+                width={2500}
+                height={1674}
+              />
             </AccordionPanel>
           </AccordionItem>
         </Accordion>
