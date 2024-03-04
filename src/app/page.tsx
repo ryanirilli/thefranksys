@@ -119,6 +119,11 @@ export default function Home() {
             </AccordionButton>
 
             <AccordionPanel pb={4}>
+              <Text maxWidth="600px" mb={8}>
+                We'll checkin to the AirBnB Friday morning to setup so all are
+                welcome to join as soon as you're ready to start raging, but the
+                official start time is 5pm.
+              </Text>
               <Heading as="h3" size="md">
                 Party Bus
               </Heading>
