@@ -101,8 +101,9 @@ export default function Home() {
 
             <AccordionPanel pb={4}>
               <Text maxWidth="600px" mb={8}>
-                <strong>Plan on arriving no later than 5pm on Friday</strong>,
-                when the festivities begin.
+                We'll checkin to the AirBnB Friday morning to setup so all are
+                welcome to join as soon as you're ready to start raging, but the
+                <strong> official start time is 5pm</strong>
               </Text>
               <AddressComponent />
             </AccordionPanel>
@@ -119,11 +120,6 @@ export default function Home() {
             </AccordionButton>
 
             <AccordionPanel pb={4}>
-              <Text maxWidth="600px" mb={8}>
-                We'll checkin to the AirBnB Friday morning to setup so all are
-                welcome to join as soon as you're ready to start raging, but the
-                official start time is 5pm.
-              </Text>
               <Heading as="h3" size="md">
                 Party Bus
               </Heading>
@@ -141,9 +137,8 @@ export default function Home() {
                     <ListItem>TBD</ListItem>
                     <ListItem>Parkway Tavern</ListItem>
                     <ListItem>Titlow Park</ListItem>
-                    <ListItem>Beer bong, Andrew speech, hazing</ListItem>
                     <ListItem>Club Silverstone</ListItem>
-                    <ListItem>Last stop - EQC</ListItem>
+                    <ListItem>Last stop - Emrald Queen Casino</ListItem>
                   </UnorderedList>
                 </ListItem>
               </UnorderedList>
