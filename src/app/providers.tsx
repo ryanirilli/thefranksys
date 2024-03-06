@@ -13,7 +13,7 @@ export const theme = extendTheme({
         color: "white", // Setting text color to white
       },
       a: {
-        color: "teal.500",
+        color: "#FAC313",
         textDecoration: "underline",
       },
     },
