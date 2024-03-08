@@ -7,15 +7,8 @@ import {
   UnorderedList,
   ListItem,
   Container,
-  Accordion,
-  AccordionItem,
-  AccordionButton,
-  AccordionPanel,
-  AccordionIcon,
-  Link,
   Stack,
 } from "@chakra-ui/react";
-import AddressComponent from "./Address";
 
 import Image from "next/image";
 
@@ -30,8 +23,8 @@ export default function Home() {
   )}`;
 
   return (
-    <Box as="main" mb="64">
-      <Container maxW="container.lg">
+    <Box as="main">
+      <Container maxW="container.lg" mb={32}>
         <Box as="section" {...sectionProps}>
           <Container my={8}>
             <Image
@@ -107,7 +100,7 @@ export default function Home() {
           </Heading>
           <Text mb={8}>
             We'll checkin to the AirBnB Friday morning to setup so all are
-            welcome to join as soon as you're ready to start the party, but the
+            welcome anytime, but the
             <strong> official start time is 5pm</strong>
           </Text>
           <Text mb={8}>
@@ -140,11 +133,9 @@ export default function Home() {
               Locations
               <UnorderedList>
                 <ListItem>Java Jive</ListItem>
-                <ListItem>TBD</ListItem>
-                <ListItem>Parkway Tavern</ListItem>
                 <ListItem>Titlow Park</ListItem>
                 <ListItem>Club Silverstone</ListItem>
-                <ListItem>Last stop - Emerald Queen Casino</ListItem>
+                <ListItem>Emerald Queen Casino</ListItem>
               </UnorderedList>
             </ListItem>
           </UnorderedList>
@@ -203,6 +194,14 @@ export default function Home() {
           </Text>
         </Activity>
       </Container>
+      <Image
+        style={{ filter: "sepia(0.5)" }}
+        src="/dalle.webp"
+        alt="bach party"
+        layout="responsive"
+        width={800}
+        height={800}
+      />
     </Box>
   );
 }
